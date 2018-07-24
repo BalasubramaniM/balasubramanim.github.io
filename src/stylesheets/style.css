@@ -12,6 +12,10 @@
 	width: 500px;
 }
 
+footer {
+	font-weight: 500 !important;
+}
+
 .b-fonticons p {
 	font-size: 15px;
 	margin-left: 15px;
