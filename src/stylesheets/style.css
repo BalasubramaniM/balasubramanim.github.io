@@ -25,6 +25,14 @@ footer {
 	padding: 0.5rem;
 }
 
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
 .b-fonticons p {
 	font-size: 15px;
 	margin-left: 15px;
