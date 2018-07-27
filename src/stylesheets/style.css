@@ -33,6 +33,14 @@ footer {
 	display: block;
 }
 
+.certifications .margin-bottom {
+	margin-bottom: 0.5rem;
+}
+
+.certifications .margin-bottom a {
+	text-decoration: underline;
+}
+
 .b-fonticons p {
 	font-size: 15px;
 	margin-left: 15px;
