@@ -33,11 +33,11 @@ footer {
 	display: block;
 }
 
-.certifications .margin-bottom {
-	margin-bottom: 0.5rem;
+.margin-bottom-5 {
+	margin-bottom: 0.5rem !important;
 }
 
-.certifications .margin-bottom a {
+.margin-bottom-5 a {
 	text-decoration: underline;
 }
 
