@@ -27,7 +27,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$(".certifications .margin-bottom").on("click", function() {
+	$(".certifications .margin-bottom-5").on("click", function() {
 		switch (this.id) {
 			case "certificate1":
 				$(".certificate1")
