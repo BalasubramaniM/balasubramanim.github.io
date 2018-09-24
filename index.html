@@ -5,24 +5,41 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125659027-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-125659027-1');
+    gtag('config', 'UA-125659027-1');
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Balsu.me</title>
     <link rel="icon" type="image/png" href="src/assets/favicon.png">
+    <link rel="manifest" href="/manifest.json">
     <!-- BULMA CSS Framework -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="src/stylesheets/style.css">
+    <link rel="stylesheet" href="src/stylesheets/bulma.min.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/stylesheets/all.css">
+    <!-- jQuery -->
+    <script src="src/javascripts/jquery-3.3.1.min.js"></script>
+    <!-- LOCAL FILES -->
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/style.css">
     <script type="text/javascript" src="src/javascripts/index.js"></script>
+    <script type="text/javascript">
+    window.addEventListener('load', async e => {
+        // await fetchTrending();
+
+        if ('serviceWorker' in navigator) {
+            try {
+                navigator.serviceWorker.register("serviceWorker.js");
+                console.log("Service Worker registered.");
+            } catch (error) {
+                console.log("Service Worker failed")
+            }
+        }
+    })
+    </script>
 </head>
 
 <body>
