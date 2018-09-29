@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	const WORK_EXPERIENCE = {
 		ZOHO: {
 			ROLE: "Member Technical Staff",
+			PERIOD: "06/2016 – Present",
 			TASKS: [
 				"Implemented JavaScript basics like Closures, Promises and self-invoking functions and has hands-on experience in DOM manipulation, event and object modelling and programming patterns.",
 				"Developed a JavaScript library which converts Android XML tags into HTML tags and CSS styles (Mobile - Web conversion) and met deadlines consistently.",
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		},
 		PEARSON: {
 			ROLE: "Software Engineer",
+			PERIOD: "11/2014 – 05/2016",
 			TASKS: [
 				"Created an SDK as a team which tracks all user's interactivity, similar to Google Analytics and an endpoint to collect user data.",
 				"Handled social integrations and has a good understanding of asynchronous request handling, partial page updates, and AJAX.",
@@ -37,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		},
 		NEXMOO: {
 			ROLE: "Software Engineer",
+			PERIOD: "04/2014 – 11/2014",
 			TASKS: [
 				"Implemented the entire search and categories section in Bharat Matrimony Windows Phone app.",
 				"Worked on CricHQ engine to automate cricket scoring in Windows Phone app.",
@@ -60,10 +63,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		let tasks = exp.TASKS.map(task => `<li>- ${task}</li>`);
 
 		document.getElementById("role").innerHTML = exp.ROLE;
+		document.getElementById("period").innerHTML = exp.PERIOD;
 		document.getElementById("tasks").innerHTML = tasks.join("");
-
-		document.getElementById("interest").innerHTML = interestHTML.join("");
 	});
+
+	document.getElementById("interest").innerHTML = interestHTML.join("");
 
 	// WORK EXPERIENCE
 	// Select first one by default during page load.
