@@ -10,6 +10,7 @@ const staticAssets = [
 	"./src/assets/Certificate_2.png",
 	"./src/assets/Certificate_3.png",
 	"./src/javascripts/index.js",
+	"./src/index.js",
 	"./src/javascripts/jquery-3.3.1.min.js"
 ];
 
