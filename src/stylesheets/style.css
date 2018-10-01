@@ -74,3 +74,7 @@ footer {
 .b-tag span {
 	text-transform: uppercase;
 }
+
+.is-fullWidth {
+	width: 100%;
+}
