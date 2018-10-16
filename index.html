@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Balsu.me</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-</head>
-<body>
-	<nav>
-		<ul>
-			<li>
-				<a href="#about">About</a>
-			</li>
-			<li>
-				<a href="#projects">Projects</a>
-			</li>
-			<li>
-				<a href="#contact">Contact</a>
-			</li>
-		</ul>
-	</nav>
-	<div id="about" class="intro">
-		<h1>Hey i'am Bala.</h1>
-		<p>a web developer</p>
-	</div>
-	<div id="projects" class="work">
-		<h2>These are some of my projects ...</h2>
-		<a href="https://codepen.io/balasubramanim/pen/PyEWgz" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47020728-a424f900-d177-11e8-9e0b-128de03ebbdf.png"></image><div>Quotes</div></a>
-		
-		<a href="https://codepen.io/balasubramanim/pen/xypRMP" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47017859-fdd5f500-d170-11e8-9f33-0d87ca2ef20d.png"></image><div>Calculate Reading Time</div></a>
-		<a href="https://tamilakam.in" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47018208-e51a0f00-d171-11e8-9f4b-3aa4e22e2671.png"></image><div>Tamilakam</div></a>
-		<a href="https://codepen.io/balasubramanim/pen/LgeygQ" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47017754-b51e3c00-d170-11e8-8182-d9eb8ff2f92f.png"></image><div>Paginate</div></a>
-		<a href="https://balsu.me/meesho-frontend-challenge/" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47020642-7475f100-d177-11e8-82f6-7619390ad9f7.png"></image><div>Subreddits Clone</div></a>
-		<a href="https://www.microsoft.com/en-us/p/unibeam/9wzdncrdd2tc" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47020852-e0f0f000-d177-11e8-90fc-9d0d9f6e2f8b.png"></image><div>Unibeam</div></a>
-		
-		<a href="https://github.com/balasubramanim" class="show-all" target="_blank">Show all</a>
-	</div>
-	<div id="contact" class="contact">
-		<div class="header">
-			<h1>Let's work together ...</h1>
-			<p>How do you take your coffee?</p>
-		</div>
-		<a href="https://github.com/balasubramanim" target="_blank" class="contact-details">GitHub</a>
-		<a href="https://www.linkedin.com/in/balasubramanim/" target="_blank" class="contact-details">LinkedIn</a>
-		<a href="https://twitter.com/bala_subramanim" target="_blank" class="contact-details">Twitter</a>
-		<a href="mailto:bala.m@live.in" class="contact-details">Send a mail</a>
-		<a href="tel:9840993326" class="contact-details">Call me</a>
-	</div>
-	<footer>
-		<p>Copyright © 2018 Balasubramani M.</p>
 
-		<p>All rights reserved.</p>
-	</footer>
+<head>
+    <title>Balsu.me</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script type="text/javascript">
+    window.addEventListener('load', async e => {
+        if ('serviceWorker' in navigator) {
+            try {
+                navigator.serviceWorker.register("sw.js");
+                console.log("Service Worker registered.");
+            } catch (error) {
+                console.log("Service Worker failed")
+            }
+        }
+    })
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="about" class="intro">
+        <h1>Hey i'am Bala.</h1>
+        <p>a web developer</p>
+    </div>
+    <div id="projects" class="work">
+        <h2>These are some of my projects ...</h2>
+        <a href="https://codepen.io/balasubramanim/pen/PyEWgz" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47020728-a424f900-d177-11e8-9e0b-128de03ebbdf.png"></image><div>Quotes</div></a>
+        <a href="https://codepen.io/balasubramanim/pen/xypRMP" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47017859-fdd5f500-d170-11e8-9f33-0d87ca2ef20d.png"></image><div>Calculate Reading Time</div></a>
+        <a href="https://tamilakam.in" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47018208-e51a0f00-d171-11e8-9f4b-3aa4e22e2671.png"></image><div>Tamilakam</div></a>
+        <a href="https://codepen.io/balasubramanim/pen/LgeygQ" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47017754-b51e3c00-d170-11e8-8182-d9eb8ff2f92f.png"></image><div>Paginate</div></a>
+        <a href="https://balsu.me/meesho-frontend-challenge/" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47020642-7475f100-d177-11e8-82f6-7619390ad9f7.png"></image><div>Subreddits Clone</div></a>
+        <a href="https://www.microsoft.com/en-us/p/unibeam/9wzdncrdd2tc" target="_blank" class="project"><image class="pic" src="https://user-images.githubusercontent.com/8181487/47020852-e0f0f000-d177-11e8-90fc-9d0d9f6e2f8b.png"></image><div>Unibeam</div></a>
+        <a href="https://github.com/balasubramanim" class="show-all" target="_blank">Show all</a>
+    </div>
+    <div id="contact" class="contact">
+        <div class="header">
+            <h1>Let's work together ...</h1>
+            <p>How do you take your coffee?</p>
+        </div>
+        <a href="https://github.com/balasubramanim" target="_blank" class="contact-details">GitHub</a>
+        <a href="https://www.linkedin.com/in/balasubramanim/" target="_blank" class="contact-details">LinkedIn</a>
+        <a href="https://twitter.com/bala_subramanim" target="_blank" class="contact-details">Twitter</a>
+        <a href="mailto:bala.m@live.in" class="contact-details">Send a mail</a>
+        <a href="tel:9840993326" class="contact-details">Call me</a>
+    </div>
+    <footer>
+        <p>Copyright © 2018 Balasubramani M.</p>
+        <p>All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
