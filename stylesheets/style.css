@@ -72,7 +72,7 @@ nav ul li a:hover {
 }
 
 .work .project {
-	border: 2px solid lightblue;
+	border: 2px solid #9eb0b6;
 	width: 280px;
 	height: 220px;
 	display: inline-block;
@@ -83,7 +83,7 @@ nav ul li a:hover {
 .work .project .pic {
 	width: 100%;
 	height: 165px;
-	border-bottom: 2px solid lightblue;
+	border-bottom: 2px solid #9eb0b6;
 }
 
 .work .show-all {
