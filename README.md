@@ -1,2 +1,0 @@
-# balasubramanim.github.io
-Portfolio
